@@ -1,10 +1,12 @@
 # Maintainer: Guillaume Benoit <guillaume@manjaro.org>
 # Contributor: Philip Müller <philm@manjaro.org>
 # Contributor: Helmut Stult
+# Contributor: Leandro Cunha <leandrocunha016@gmail.com>
+# https://gitlab.manjaro.org/packages/extra/pamac
 
 pkgname=pamac-gtk3
 pkgver=10.6.0
-pkgrel=4
+pkgrel=5
 pkgdesc="A Package Manager based on libalpm with AUR and Appstream support (GTK3)"
 arch=('x86_64' 'aarch64')
 url="https://gitlab.manjaro.org/applications/pamac"
@@ -15,6 +17,7 @@ depends=(
   'libhandy'
   'libnotify'
   'libpamac-aur>=11.6.4'
+  'pamac-cli>=11.6.0'
 )
 makedepends=(
   'asciidoc'
@@ -25,7 +28,7 @@ makedepends=(
 )
 optdepends=(
   'libpamac-flatpak-plugin: for Flatpak support'
-  'libpamac-snap-plugin: for Snap support'
+# 'libpamac-snap-plugin: for Snap support'
 #  'libpamac-aur-plugin: for AUR support'
 #  'libpamac-appstream-plugin: for Appstream support'
 )
